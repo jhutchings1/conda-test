@@ -5,8 +5,8 @@ on:
   push:
 
 permissions:
-  write
-
+  id-token: write
+  contents: write
 jobs:
   dependency-submission:
     runs-on: ubuntu-latest

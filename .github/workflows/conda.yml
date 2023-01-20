@@ -1,0 +1,13 @@
+name: Conda dependency submission
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  dependency-submission:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Conda dependency scanning
+        uses: jhutchings1/conda-dependency-submission-action@develop
